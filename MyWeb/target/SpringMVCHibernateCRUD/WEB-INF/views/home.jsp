@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-<meta charset=UTF-8">
+<meta charset = UTF-8>
 <title>Employee Management Screen</title>
 </head>
 <body>

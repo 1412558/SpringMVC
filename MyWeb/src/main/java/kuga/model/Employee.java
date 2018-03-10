@@ -1,8 +1,9 @@
 package kuga.model;
 
+import org.hibernate.validator.constraints.*;
 import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.io.Serializable;
-
 @Entity
 @Table(name = "EMP_TBL")
 public class Employee implements Serializable {
@@ -14,15 +15,21 @@ public class Employee implements Serializable {
 	private int id;
 
 	@Column
+	@NotEmpty(message="Tên không được rỗng!")
 	private String name;
 
 	@Column
+	@NotEmpty(message="Email không được rỗng!")
+	@Email(message="Email không nhập đúng định dạng")
 	private String email;
 
 	@Column
+	@NotEmpty(message="Địa chỉ không được rỗng!")
 	private String address;
 
 	@Column
+	@NotEmpty(message="Điện thoại không được rỗng!")
+	@Size(min = 10, max = 11)
 	private String telephone;
 
 	public int getId() {
