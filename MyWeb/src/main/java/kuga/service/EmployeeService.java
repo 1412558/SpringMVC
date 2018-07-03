@@ -1,7 +1,8 @@
 package kuga.service;
 
-import kuga.model.Employee;
 import java.util.List;
+
+import Model.Employee;
 
 public interface EmployeeService {
 	

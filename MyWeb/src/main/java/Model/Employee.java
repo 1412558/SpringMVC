@@ -1,10 +1,10 @@
-package kuga.model;
+package Model;
 
 import org.hibernate.validator.constraints.*;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.io.Serializable;
-@Entity
+//@Entity
 @Table(name = "EMP_TBL")
 public class Employee implements Serializable {
 
@@ -15,20 +15,20 @@ public class Employee implements Serializable {
 	private int id;
 
 	@Column
-	@NotEmpty(message="Tên không được rỗng!")
+	@NotEmpty(message="TÃªn khÃ´ng Ä‘Æ°á»£c rá»—ng!")
 	private String name;
 
 	@Column
-	@NotEmpty(message="Email không được rỗng!")
-	@Email(message="Email không nhập đúng định dạng")
+	@NotEmpty(message="Email khÃ´ng Ä‘Æ°á»£c rá»—ng!")
+	@Email(message="Email khÃ´ng nháº­p Ä‘Ãºng Ä‘á»‹nh dáº¡ng")
 	private String email;
 
 	@Column
-	@NotEmpty(message="Địa chỉ không được rỗng!")
+	@NotEmpty(message="Ä�á»‹a chá»‰ khÃ´ng Ä‘Æ°á»£c rá»—ng!")
 	private String address;
 
 	@Column
-	@NotEmpty(message="Điện thoại không được rỗng!")
+	@NotEmpty(message="Ä�iá»‡n thoáº¡i khÃ´ng Ä‘Æ°á»£c rá»—ng!")
 	@Size(min = 10, max = 11)
 	private String telephone;
 
