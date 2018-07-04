@@ -1,8 +1,11 @@
 package Model;
 
-import org.hibernate.validator.constraints.*;
 import javax.persistence.*;
-import javax.validation.constraints.*;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import java.io.Serializable;
 //@Entity
 @Table(name = "EMP_TBL")
