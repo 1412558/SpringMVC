@@ -12,7 +12,7 @@ public abstract class GenericService<T> implements Service<T> {
 	protected Session session = Neo4jSessionFactory.getInstance()
 			.getNeo4jSession();
 
-	public Collection findAll() {
+	public Collection<T> findAll() {
 		return session.loadAll(getEntityType(), DEPTH_LIST);
 	}
 
