@@ -1,0 +1,17 @@
+- xóa nhiều node
+	match (n) where id (n) in [2,3] delete n
+- xóa relationship
+	-- xóa các r tên BATSMAN_OF: MATCH ()-[r:BATSMAN_OF]-() DELETE r
+	-- xóa chi tiết của node: MATCH (:nodegoc)-[r:RELEASED]-(:nodedich) DELETE r
+= xóa mọi node và relationship: MATCH (n) DETACH DELETE n
+- get tất cả các node
+	MATCH (n) RETURN n
+pass Graph: kuga1996
+format trong eclip ctrl + shift + f
+
+
+
+
+		Iterable<Student> students = session.query(Student.class,
+                "MATCH (c:Course)<-[:ENROLLED]-(student) WHERE c.name = 'Advanced Algorithm' RETURN student",
+                Collections.<String, Object> emptyMap());
