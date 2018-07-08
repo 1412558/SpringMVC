@@ -29,34 +29,4 @@ public class Neo4jSessionFactory {
     public Session getNeo4jSession() {
         return sessionFactory.openSession();
     }
-
-
-
-
-
-
-
-
-//    public final Configuration configuration =  new Configuration.Builder().uri(URI).credentials(Username, Password).build();
-//
-//    public final SessionFactory sessionFactory = new SessionFactory(
-//            configuration, "entities");
-//    public static Neo4jSessionFactory factory ;
-//
-//    public static Neo4jSessionFactory getInstance() {
-//        return factory;
-//    }
-//
-////	public Neo4jSessionFactory()   {
-////		factory = new Neo4jSessionFactory();
-////	}
-//
-//    public Neo4jSessionFactory()   {
-//
-//    }
-//
-//    public Session getNeo4jSession() {
-//        return sessionFactory.openSession();
-//    }
-
 }

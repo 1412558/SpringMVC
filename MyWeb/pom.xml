@@ -24,14 +24,20 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
+			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
+			<artifactId>spring-core</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet-api-version}</version>
 		</dependency>
 
 		<dependency>
@@ -40,63 +46,41 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${spring.version}</version>
-			<scope>test</scope>
-		</dependency>
 
 		<!-- Hibernate 4 dependencies -->
 <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>5.2.17.Final</version>
-</dependency>
+<!--<dependency>-->
+    <!--<groupId>org.hibernate</groupId>-->
+    <!--<artifactId>hibernate-core</artifactId>-->
+    <!--<version>5.2.17.Final</version>-->
+<!--</dependency>-->
 
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-c3p0</artifactId>
-			<version>${hibernate.version}</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>5.4.1.Final</version>
-		</dependency>
-				<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.hibernate</groupId>-->
+			<!--<artifactId>hibernate-c3p0</artifactId>-->
+			<!--<version>${hibernate.version}</version>-->
+		<!--</dependency>-->
+		<!--&lt;!&ndash; https://mvnrepository.com/artifact/javax.validation/validation-api &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>javax.validation</groupId>-->
+			<!--<artifactId>validation-api</artifactId>-->
+			<!--<version>1.1.0.Final</version>-->
+		<!--</dependency>-->
+		<!--&lt;!&ndash; https://mvnrepository.com/artifact/org.hibernate/hibernate-validator &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>org.hibernate</groupId>-->
+			<!--<artifactId>hibernate-validator</artifactId>-->
+			<!--<version>5.4.1.Final</version>-->
+		<!--</dependency>-->
+				<!--&lt;!&ndash; https://mvnrepository.com/artifact/javax.validation/validation-api &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>javax.validation</groupId>-->
+			<!--<artifactId>validation-api</artifactId>-->
+			<!--<version>1.1.0.Final</version>-->
+		<!--</dependency>-->
 		<!-- Servlet and JSP -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>${servlet-api-version}</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
@@ -121,12 +105,12 @@
 		</dependency>
 
 		<!--BEGIN NEO4J -->
-
 		<dependency>
 			<groupId>org.neo4j</groupId>
 			<artifactId>neo4j-ogm-core</artifactId>
-			<version>2.1.1</version>
+			<version>3.1.0</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.neo4j</groupId>
@@ -134,36 +118,25 @@
 			<version>3.1.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.neo4j/neo4j-ogm-embedded-driver -->
-		<dependency>
-			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-ogm-embedded-driver</artifactId>
-			<version>2.1.5</version>
-		</dependency>
+		<!--&lt;!&ndash; https://mvnrepository.com/artifact/org.neo4j/neo4j-ogm-embedded-driver &ndash;&gt;-->
+		<!--<dependency>-->
+			<!--<groupId>org.neo4j</groupId>-->
+			<!--<artifactId>neo4j-ogm-embedded-driver</artifactId>-->
+			<!--<version>2.1.5</version>-->
+		<!--</dependency>-->
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-neo4j -->
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-neo4j</artifactId>
-			<version>5.0.8.RELEASE</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.data</groupId>-->
+			<!--<artifactId>spring-data-neo4j</artifactId>-->
+			<!--<version>5.0.8.RELEASE</version>-->
+		<!--</dependency>-->
 		<!-- https://mvnrepository.com/artifact/org.neo4j/neo4j-ogm-http-driver -->
-		<dependency>
-			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-ogm-http-driver</artifactId>
-			<version>2.1.5</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.neo4j</groupId>-->
+			<!--<artifactId>neo4j-ogm-http-driver</artifactId>-->
+			<!--<version>2.1.5</version>-->
+		<!--</dependency>-->
 		<!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
-		<dependency>
-			<groupId>org.neo4j.driver</groupId>
-			<artifactId>neo4j-java-driver</artifactId>
-			<version>1.5.1</version>
-		</dependency>
-<!-- https://mvnrepository.com/artifact/org.neo4j/neo4j-ogm -->
-<dependency>
-    <groupId>org.neo4j</groupId>
-    <artifactId>neo4j-ogm</artifactId>
-    <version>1.1.0</version>
-</dependency>
 
 		<!--END NEO4J -->
 	</dependencies>

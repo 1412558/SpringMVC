@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SpringMVC_Neo4j" target="1.5" />
+      <module name="SpringMVC_Neo4j" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

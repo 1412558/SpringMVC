@@ -1,11 +1,9 @@
 package Model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.neo4j.ogm.annotation.GraphId;
 
 public abstract class Entity {
-	@Id
-	@GeneratedValue
+	@GraphId
 	private Long id;
 
 	public Long getId() {
