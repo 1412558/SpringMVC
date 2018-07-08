@@ -73,11 +73,6 @@
 			<!--<version>4.3.18.RELEASE</version>-->
 		<!--</dependency>-->
 
-
-
-
-
-
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
@@ -111,18 +106,12 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.neo4j/neo4j-ogm-http-driver -->
+
 		<dependency>
 			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-ogm-http-driver</artifactId>
+			<artifactId>neo4j-ogm-bolt-driver</artifactId>
 			<version>3.1.0</version>
 		</dependency>
-
-
-		<!--<dependency>-->
-			<!--<groupId>org.neo4j</groupId>-->
-			<!--<artifactId>neo4j-ogm-bolt-driver</artifactId>-->
-			<!--<version>3.1.0</version>-->
-		<!--</dependency>-->
 		<!--spring with neo4j-->
 
 		<!--<dependency>-->

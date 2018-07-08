@@ -11,13 +11,16 @@ public class Neo4jSessionFactory {
 //    private final static ClasspathConfigurationSource props = new ClasspathConfigurationSource("./config.properties");
 //    private final static Configuration configuration = new Configuration.Builder(props).build();
 
-
-    private final static String URI = "";
+// get uri form OS's variable
+    private final static String URI = System.getenv("DataBase_Neo4j");
     private final static String Username = "";
     private final static String Password = "";
 
 
-    private final static Configuration configuration = new Configuration.Builder().uri(System.getenv("DataBase_Neo4j_Http_Driver")).build();
+    private final static Configuration configuration = new Configuration.Builder()
+            .uri(URI)
+            .connectionPoolSize(150)
+            .build();
     //private final static Configuration configuration = new Configuration.Builder().uri(URI).credentials(Username, Password).build();
     private final static SessionFactory sessionFactory = new SessionFactory(configuration, "com.SpringMVC.entities");
     private static Neo4jSessionFactory factory = new Neo4jSessionFactory();
