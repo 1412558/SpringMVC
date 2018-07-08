@@ -48,6 +48,11 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
 		<!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-web &ndash;&gt;-->
 		<!--<dependency>-->
 			<!--<groupId>org.springframework</groupId>-->
@@ -105,11 +110,34 @@
 			<version>3.1.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.neo4j/neo4j-ogm-http-driver -->
 		<dependency>
 			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-ogm-bolt-driver</artifactId>
+			<artifactId>neo4j-ogm-http-driver</artifactId>
 			<version>3.1.0</version>
 		</dependency>
+
+
+		<!--<dependency>-->
+			<!--<groupId>org.neo4j</groupId>-->
+			<!--<artifactId>neo4j-ogm-bolt-driver</artifactId>-->
+			<!--<version>3.1.0</version>-->
+		<!--</dependency>-->
+		<!--spring with neo4j-->
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-data-neo4j</artifactId>-->
+		<!--</dependency>-->
+
+
+
+
+		<!--<dependency>-->
+			<!--<groupId>io.github.cdimascio</groupId>-->
+			<!--<artifactId>java-dotenv</artifactId>-->
+			<!--<version>3.0.0</version>-->
+		<!--</dependency>-->
 
 
 	</dependencies>
